@@ -149,3 +149,61 @@ console.log(Marr);
 
 
 //Nested for loop
+
+//more on objects, and writing functions inside an object
+const aboutMe = (name,hair,shirt) => {
+    const Jon ={
+        name:name,
+        hair: hair,
+        shirt: shirt,
+        assets: 100000,
+        liabilities: 2000,
+        networth: function(){
+            return this.assets - this.liabilities
+        }
+
+    }
+    const j = `Hi my name is ${Jon.name} and i have a pretty long ${Jon.hair}. i am wearing a ${Jon.shirt} shirt my networth is ${Jon.networth()}`
+    return j
+}
+console.log(aboutMe('Jonathan','Afro','White'))
+
+//an array of groceries
+
+groceries = ['apple', 'banana','pear','ruby','orange']
+
+console.log(groceries)
+//a cleaner way to write a loop for yur consumption
+for (const groc of groceries){
+    console.log(groc)
+}
+
+const numbers = [2,4,5,7,8,6,3,5]
+for (const num of numbers){
+    console.log(num * 2)
+}
+
+//a function that counts letters
+let result = 0;
+const sumArray = (num)=>{
+    for(const i of num){
+    result = result + i}
+    return {result}
+   
+}
+arr = [20,2,3,-1,9,12]
+console.log(sumArray(arr)) 
+
+
+//finding the maximum of a number
+const MAx = (numbers) => {
+        let Result =numbers[0]
+        for(num of numbers){
+            if (num < Result){
+                Result = num
+            }
+        }
+        return {Result}
+}
+
+console.log(MAx(arr))
