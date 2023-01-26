@@ -61,10 +61,10 @@ const namme = array.map(n => n.name).join(', ')
 
 //using reduce to add the net worths (takes a fn and second parameter)
 const net = array.reduce((a,b) => a+b.networth, 0)
-// console.log(net)
+ //console.log(net)
 
 
-// REDUCE - used to sum... when you think sum, think reduce.
+// REDUCE -(reduces ) used to sum... when you think sum, think reduce.
 //reuce takes in a function as an argument
 //it loops and gives back the accumulator
 
@@ -74,3 +74,7 @@ const result = numberss.reduce((prev, curr) => prev + curr)
 // console.log(result)
 
 //using reduce to get the sum of the total networth
+
+const resulT = numberss.reduce((a,b) => a*b)
+console.log(resulT)
+
