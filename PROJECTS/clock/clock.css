@@ -6,7 +6,7 @@ body{
     align-items: center;
     height: 100vh;
     justify-content: center;
-    background: url(Rail.png) no-repeat center center;
+    background: url(../Image/SkyTrain.png) no-repeat center center;
     background-size: cover;
     overflow: hidden;
 }

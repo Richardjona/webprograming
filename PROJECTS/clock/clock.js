@@ -11,7 +11,6 @@ function updateClock(){
     let ampm = "AM"
 
     if (h > 12){
-        h = h - 1
         ampm = "PM"
     }
 

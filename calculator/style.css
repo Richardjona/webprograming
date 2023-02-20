@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height:100vh;
+    align-items: center;
+    background: yellow;
+    font-family: cursive;
+    
+   
+}
+h1{
+    color: red;
+    font-size: 25px;
+    margin-top: 0;
+}
+.calculator{
+    background-color: white;  
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.4); 
+    border-radius: 15px; 
+    margin: 10px;
+}
+
+.calculator .score{
+    color: green;
+   text-align: right;
+   margin: 10px;
+}
+.question{
+    font-size: 20px;
+    margin:5px
+
+}
+
+.calculator #answer{
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 2px green;
+    color: green;
+}
+
+#answer::placeholder{
+    color:lightgray;
+    font-family: cursive;
+}
+
+#btn {
+    color: white;
+    background-color: green;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    margin: 20px 0;
+    font-family: cursive;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0, .8);
+}
+
+#btn:hover{
+   filter: brightness(.8)
+}
